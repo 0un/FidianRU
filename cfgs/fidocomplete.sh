@@ -1,0 +1,9 @@
+#!/bin/sh
+/usr/local/sbin/echoscan.sh
+/usr/local/sbin/netscan.sh
+/usr/local/sbin/poll.sh
+/usr/local/sbin/toss.sh
+/usr/local/sbin/tick.sh
+/usr/local/sbin/poll.sh
+/usr/local/sbin/toss.sh
+/usr/local/sbin/tick.sh

@@ -1,0 +1,7 @@
+#!/bin/sh
+USERNAME=`whoami` ; T1="root"
+if [ "$T1" = "$USERNAME" ]; then 
+echo  'Please do not run this script as root' ; exit
+fi
+
+LANG=ru_RU.KOI8-R luit -x -encoding koi8-r /usr/bin/gedlnx -C/home/fido/.golded/golded.cfg

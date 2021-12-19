@@ -1,0 +1,11 @@
+/var/log/husky/*.log {
+  su ftn ftn
+	rotate 4
+	weekly
+	delaycompress
+	compress
+	nocreate
+	missingok
+	notifempty
+  create 640 ftn ftn
+}
