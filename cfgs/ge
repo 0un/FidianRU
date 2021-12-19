@@ -5,3 +5,6 @@ echo  'Please do not run this script as root' ; exit
 fi
 
 LANG=ru_RU.KOI8-R luit -x -encoding koi8-r /usr/bin/gedlnx -C/home/fido/.golded/golded.cfg
+
+# Or example for PUTTY Window -> Translation ->  Remote character set: KOI8-R
+#LANG=ru_RU.KOI8-R /usr/bin/gedlnx -C/home/fido/.golded/golded.cfg
