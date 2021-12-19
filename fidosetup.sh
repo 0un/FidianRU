@@ -474,6 +474,16 @@ then
   echo "    - adding ru_RU.UTF-8"
   echo "ru_RU.UTF-8 UTF-8" >>/etc/locale.gen
 fi
+if [ $( grep -c '^en_GB.UTF-8 UTF-8' /etc/locale.gen ) -eq 1 ]
+then
+  echo "    - remove en_GB.UTF-8"
+  sed -i 's/en_GB.UTF-8 UTF-8/# en_GB.UTF-8 UTF-8/g' /etc/locale.gen
+fi
+if [ $( grep -c '^LANG=en_GB.UTF-8' /etc/default/locale ) -eq 1 ]
+then
+  echo "    - setting default locale - "
+  sed -i 's/LANG=en_GB.UTF-8/LANG=ru_RU.UTF-8/g' /etc/default/locale
+fi
 echo "    - Running locale-gen"
 locale-gen
 
