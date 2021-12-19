@@ -505,7 +505,7 @@ fi
 echo ""
 echo '  * ALL DONE!'
 echo '    You can now login as user "fido" and start reading and writing, using'
-echo '    "golded".'
+echo '    "ge".'
 echo ''
 echo '    Mail is autoatically polled and tossed every 10 minutes or when you '
 echo '    write any of your own.'
